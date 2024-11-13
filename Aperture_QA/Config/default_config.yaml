@@ -1,1 +1,10 @@
-Url: https://www.saucedemo.com/
+url_saucedemo: https://www.saucedemo.com/
+BrowserTimeout: 30s
+screenshot_timeout: 20s
+
+browser: chromium
+
+username:
+  valid: standard_user
+  invalid: locked_out_user
+password : secret_sauce
