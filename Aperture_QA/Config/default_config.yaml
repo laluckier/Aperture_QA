@@ -8,3 +8,7 @@ username:
   valid: standard_user
   invalid: locked_out_user
 password : secret_sauce
+
+API:
+  url_fakestoreapi: https://fakestoreapi.com/
+  product_path: /products
