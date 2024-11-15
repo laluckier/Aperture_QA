@@ -1,8 +1,9 @@
 *** Settings ***
 Library            Collections
 Library            RequestsLibrary
-Library    ../../../.venv/Lib/site-packages/robot/libraries/String.py
-Resource          ../Testdata/fakestoreapi.robot
+Library            String
+Library            JSONLibrary
+Resource           ../Testdata/fakestoreapi.robot
 Variables          ../../Config/default_config.yaml         
 
 *** Keywords ***
@@ -37,6 +38,7 @@ Get Product By Category
 
 Sorted Product In ${type} Order
     [Documentation]    Owner: Pattamawan
+    ...        ${type}    Support only 'Asc' or 'Desc'
     ${text}        Convert To Lower Case    ${type}
     ${sorted_response}=    GET On Session    ${fake_store}    url=${API.product_path}?sort=${text}        expected_status=200
     Log List    ${sorted_response.json()}

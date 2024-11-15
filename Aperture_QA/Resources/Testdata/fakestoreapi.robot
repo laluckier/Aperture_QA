@@ -9,7 +9,5 @@
 ...                           description=North Blue
 ...                           image=https://static.wikia.nocookie.net/onepiece/images/e/e8/Trafalgar_Law%27s_Third_Wanted_Poster.png/revision/latest?cb=20240724033905
 ...                           category=Heart Pirates
-...                           image=https://static.wikia.nocookie.net/onepiece/images/b/b8/Nico_Robin%27s_Current_Wanted_Poster.png/revision/latest?cb=20161222000656
-...                           category=Straw Hat Pirates
 ${category}                   jewelery
 ${product_id}                 15
